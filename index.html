@@ -10,10 +10,11 @@
 }
 
 /* body 样式 */
-body {
-    font-family: Arial;
-    margin: 0;
-}
+body {   
+        flex-direction: column;
+		width:70%; border:1px solid #003;
+    margin:0 auto;
+	}
 
 /* 标题 */
 .header {
@@ -98,11 +99,12 @@ body {
 @media screen and (max-width: 700px) {
     .row {   
         flex-direction: column;
+		margin:0 auto;
     }
 }
 
 /* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
-@media screen and (max-width: 400px) {
+/*@media screen and (max-width: 400px) {
     .navbar a {
         float: none;
         width: 100%;
